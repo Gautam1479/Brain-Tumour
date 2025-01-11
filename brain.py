@@ -53,7 +53,7 @@ if st.button('Submit'):
         img = image.load_img(mri_image, target_size=(150, 150))
         img_array = image.img_to_array(img)
         img_array = np.expand_dims(img_array, axis=0)
-        model = load_model('D:/Brain Tumour Detector/brainT (1).h5')
+        model = load_model('brainT (1).h5')
         predictions = model.predict(img_array)
         predicted_class = np.argmax(predictions, axis=1)
         

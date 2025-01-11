@@ -63,8 +63,6 @@ if st.button('Submit'):
         if f == 2:
             message = f"{patient_name}, you are safe. You do not have a tumor."
             st.success(message)
-            if success_animation:
-                st_lottie(success_animation, height=200)
             print(message)
         else:
             if f == 0:
